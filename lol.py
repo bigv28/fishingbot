@@ -1,8 +1,9 @@
 import requests
 import time
+from tok import a,b,c
 
 URL = 'https://discord.com/api/v9/channels/1025871229950902352/messages'
-AUTH = {'authorization': 'NDU5NDI0MDI1MTEwOTA0ODU0.G3QHRK.bgECq4xV3gZdY76z07EdR1ShUAHaAbKtLRiRt4'}
+AUTH = {'authorization': a+b+c}
 
 
 def approve():
@@ -25,8 +26,8 @@ def send(command):
 while True:
     send('wd 50')
     send('buy f')
-    approve()
     time.sleep(2.25)
+    approve()
 
     send('fish')
     send('sell all')
